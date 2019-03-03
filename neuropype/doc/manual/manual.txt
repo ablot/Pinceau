@@ -1,0 +1,45 @@
+/neuropype
+python main.py
+Text window -> File -> New -> Filename
+
+Tree -> Add node -> FileSet ("data")
+
+t=mw.tree (for speed)
+t.save()
+
+t.data.params (for list of parameters)
+
+t.data.set_param(filelist=['/home/barbour/share/data/data_2011/2011_05_30/2001_05_30_000.wcp'])
+
+Tree -> Add node -> Average ("average")
+
+Tree -> Connect (doesn't work yet because of different groups)
+
+t.average.Connect('sweep','data','sweep',force=True)
+
+
+To reload analysis:
+%run filename
+mw.tree = t
+
+
+FIGURE
+
+Figure_X
+
+or
+
+mw.Figure_X.fig
+
+(fig.canvas.draw or click draw; hidden by default)
+
+
+AVERAGE
+
+By default, average outputs "cumulative averages", so to get the average of all sweeps (without any tagging), just go to the last sweep at the output of average.
+
+
+
+
+
+

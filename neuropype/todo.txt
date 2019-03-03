@@ -1,0 +1,87 @@
+Default node names (FileSet_0, etc).
+
+Align SetParam boxes; allow longer parameter names ('baseline1_mean_half_width' is truncated!)
+
+Room for parameter explanation (or use tool tip)?
+
+nested tags (cell, condition)
+
+if save with new name, replace that as default? link to tree name?
+
+save menu option
+
+problem with mdp importing configuration module that doesn't exist
+
+be nicer if fileSet contains nothing (currently cryptic assertion error)
+be nicer if tags contain nothing
+be nicer if tag not set in average
+
+deal with missing sweeps
+
+understand detection
+detect able to set meaningless param 'absolute' for the baseline - check param universe?
+win0 can be too small
+baseline window is in time not points (indicate)
+more generally, parameters need help strings
+
+be able to save a node-full of parameters
+
+wishlist - save groups of nodes (with and without parameters)
+
+add check in tags for fewer input sweeps
+allow parallel input for tags (like I use detect)
+
+if tag is set in average before it has been created in tags -> disaster
+
+make tags parallel to avoid transferring data?
+
+default basename, data, analysis paths; config in home directory to enable switching between home and work with different users.
+
+return on setparam dialog doesn't update/apply
+
+add connect button and indicator of connection to connect dialog; don't need to dismiss it each connection
+
+wishlist - abort long calculations
+
+checkout types for displaysweep input - shouldn't display garbage
+
+setparam shouldn't be in view menu?
+
+is this kind of escaping necessary?
+print '''list_files has probably changed since tagType creation, 
+            some tags might be corrupted if you don\'t update them (dirty 
+            fileSet should work)'''
+(FileSet.py)            
+
+figure Dialoge Figure_0
+
+youhou is hello not goodbye
+
+save() needs to be clever about parsing name with path (and maybe to print message with tree.home if it fails)
+
+should sweep._getdata be concatenating lists instead of indexing in the numpy array?
+
+search for leaf CONFIG between pwd and home?
+
+prefer V/unit in ChannelType?
+
+how to delete nodes?
+
+enable .dat as well as .abf for pclamp files
+
+actualiseDisplay -> updateDisplay (in DisplaySweepWidget)
+
+move graphviz colour params to some central default - hardly worth having individual colours (or organise random colours)
+
+Is FileSet too complicated? (possibly beginning of model/view controller?)
+
+deal automatically with dirty FileSet?
+
+    def samplingInterval(self, *args, **kwargs):
+        return 'dunno'
+        
+PClampFile inputSweep method around line 330. Couple of TODOs: caching and possible need to adjust file information earlier to account for acquisitions truncated before the planned end of the protocol.
+
+For Figure_0 etc, the embedded figure can be resized programatically, but the dialog doesn't adjust itself. maybe it could - very minor.
+
+On gerd (French locale), decimal comma poses problem in displaysweep limits (only some of them) and many of the parameter selection boxes.
