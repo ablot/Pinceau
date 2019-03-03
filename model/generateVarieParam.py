@@ -50,5 +50,5 @@ for ind, p in enumerate(params):
     # cb.ax.yaxis.set_ticks(np.linspace(0,1,5))
     cb.ax.set_yticklabels(['x %.2f'%(i) if i != 1 else '%.2f %s'%(getattr(cst,p)*factor[p], units[p]) for i in R])
 [plot_common.makeScale(x, -2,-50,xext = 1, yunit = 'microV', xunit = 'ms') for x in axes]
-fig.savefig(_j(LOCAL, 'model/figSupvariParm.pdf'))
+fig.savefig(_j(SAVE_PATH, 'figSupvariParm.pdf'))
 
