@@ -3,6 +3,10 @@
 Model used in [Ultra-rapid axon-axon ephaptic inhibition of cerebellar Purkinje 
 cells by the pinceau](https://www.nature.com/articles/nn.3624).
 
+## License 
+
+See `LICENSE.txt`. Note that the `neuropype` as a different license than the rest of the repository (AGPL, in `neuropype/LICENSE.txt`).
+
 ## Dependencies
 
 The code is a bit outdated. It should run with python 2.7 and ipython 3.2.1. If you 
